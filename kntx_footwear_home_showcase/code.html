@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#454933", "inverse-on-surface": "#313031", "on-primary": "#2b3400", "background": "#131314", "on-secondary-container": "#531100", "surface-container-lowest": "#0e0e0f", "surface-dim": "#131314", "surface-container-high": "#2a2a2b", "inverse-surface": "#e5e2e3", "on-surface": "#e5e2e3", "surface-tint": "#b3d400", "inverse-primary": "#556500", "tertiary-fixed": "#e2e2e2", "primary-container": "#cdf200", "on-secondary": "#5f1500", "on-surface-variant": "#c5c9ac", "outline": "#8f9379", "secondary-container": "#ff5721", "error": "#ffb4ab", "on-secondary-fixed-variant": "#862200", "surface-bright": "#3a393a", "surface-container-highest": "#353436", "on-error": "#690005", "surface-container": "#201f20", "tertiary-container": "#e2e2e2", "tertiary": "#ffffff", "surface-container-low": "#1c1b1c", "secondary-fixed-dim": "#ffb5a0", "secondary": "#ffb5a0", "primary": "#ffffff", "on-secondary-fixed": "#3b0900", "surface": "#131314", "on-primary-fixed": "#181e00", "on-tertiary-fixed": "#1a1c1c", "secondary-fixed": "#ffdbd1", "on-tertiary": "#2f3131", "on-error-container": "#ffdad6", "surface-variant": "#353436", "on-primary-fixed-variant": "#3f4c00", "on-primary-container": "#5a6c00", "error-container": "#93000a", "primary-fixed": "#cdf200", "on-background": "#e5e2e3", "on-tertiary-fixed-variant": "#454747", "on-tertiary-container": "#636565", "tertiary-fixed-dim": "#c6c6c7", "primary-fixed-dim": "#b3d400" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "margin": "1rem", "space-xl": "2.5rem" }, fontFamily: { "body-sm": ["Inter"], "headline-md": ["Anton"], "label-caps-bold": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Anton"], "label-sm": ["Inter"], "headline-xl-mobile": ["Anton"], "label-caps-mono": ["Inter"], "display-hero-mobile": ["Anton"], "headline-lg": ["Anton"], "headline-xl": ["Anton"], "body-lg": ["Inter"], "display-hero": ["Anton"] }, fontSize: { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "26px", "letterSpacing": "0.04em", "fontWeight": "400" }], "label-caps-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "28px", "letterSpacing": "0.03em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "headline-xl-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400" }], "label-caps-mono": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "36px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["80px", { "lineHeight": "84px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="bg-primary-fixed text-on-primary-fixed px-gutter py-1 text-center overflow-hidden"><p class="font-label-caps-mono text-label-caps-mono uppercase tracking-widest truncate">FREE EXPRESS SHIPPING ON ORDERS OVER $150 • CODE: VELOX</p></div><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="KNTX Athletic Speedmark Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD_5wVUpQe_aX8k6ZCZxbEw5mPOsXG12tCWIadu8vhlmcuSqs-KSEWzhPcyFpoUdMb9ckDng6Re2dJ5EUgjwwHLLtyDJOTajT2A4yaWssLwmbAUZxgr2LM8jqylD6hUsufy8FXaBxvFw9o_wBPWWZo9QHcwMIjE4gvcCZlG7dIDnlfmq-5cnSelfbw8AUnG5ZP2eqGYcowISfa0GYy9qubQ33IfyFXCMqhTbIwIy2n7"/><span class="font-headline-md text-headline-md tracking-wider uppercase text-primary">KNTX</span><span class="hidden">Home Showcase</span></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined">search</span></button><a class="w-11 h-11 relative flex items-center justify-center text-on-surface hover:text-primary-fixed transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-secondary-container text-primary font-label-sm text-[9px] font-bold leading-none">4</span></a><a class="w-11 h-11 relative flex items-center justify-center text-on-surface hover:text-primary-fixed transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[9px] font-bold leading-none">2</span></a><div class="w-11 h-11 flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-fixed/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDclGrPB0PfnjM-SQPo-aopMUZRMQRCv7w3w_hTDZFcJ4QdYiusPpljFE_XnkGiPuVMNqChGetOeogszjqsKyxFEPsU5yycTVOMmAAfq4JHoMVG284nMF8K_D6N6gkBi14ty8O71jN7lXJnA1poi-BwpFYYrEeyetkPzQbb7eWdC85FqudZOfhYgLnW9-thct9IPzjPhHYbC42j6cnfs0k4n7tE4MqnQiZjFVZK-qw"/></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface select-none pb-8">
+<!-- 1. DARK-MODE HERO SECTION -->
+<section class="relative w-full px-gutter pt-4 pb-8 flex flex-col overflow-hidden bg-surface-container-lowest">
+<!-- Subtle Athletic Grid & Speed Lines Background Overlay -->
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#cdf200_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
+<!-- Telemetry Status Ribbon -->
+<div class="flex items-center justify-between z-10 mb-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-caps-mono text-label-caps-mono uppercase text-primary-fixed">SERIES 04 // LAB SPEC</span>
+</div>
+<span class="font-label-caps-mono text-label-caps-mono text-on-surface-variant uppercase tracking-wider">PROTO: V4-EXP</span>
+</div>
+<!-- Floating Shoe Visual Deck with Dynamic forward tilt angle -->
+<div class="relative w-full h-64 flex items-center justify-center my-2 z-10 group">
+<div class="absolute inset-x-8 bottom-4 h-8 bg-black/60 rounded-full blur-xl scale-90"></div>
+<img alt="KNTX AeroBlast V4" class="relative z-10 w-full h-full object-contain -rotate-[12deg] drop-shadow-[0_16px_28px_rgba(205,242,0,0.18)] transition-transform duration-500 hover:scale-105 hover:-rotate-[8deg]" data-alt="Hyper-realistic lateral studio render of an athletic carbon-plated racing sneaker in volt electric lime, obsidian black, and optic white details. Floats at an aggressive 25-degree forward trajectory with dynamic aero speed trails and reflective synthetic mesh weave against deep dark carbon backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnKyLK9ytHtyjE6nkxe97ZqTX3Tr3u04Di6dU2_VirVgWnVp-hruQUa-ciNWiVBAQ5IpDUJOX8p4aucF7NFW9bYfRjBpp2_a3z5h-gP8oPXBZnQFa4F7B-63forGxPElNJyD_PVFLWDEnacEwjU6dTQ4L9rjFmYnYKvfl95j3gKad6ivW4Ml8avn8vUTJiKCe5lrObB4FcIZmop0E2_PHpILHoYIgk26KE2bMXreg"/>
+<!-- Interactive Micro Speedmark Badge -->
+<div class="absolute top-2 right-1 bg-surface-container/90 backdrop-blur-md px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">speed</span>
+<span class="font-label-caps-mono text-[10px] text-on-surface font-bold uppercase">NITROFOAM™ 2.0</span>
+</div>
+</div>
+<!-- Massive Athletic Typography & Value Proposition -->
+<div class="z-10 flex flex-col gap-2 mt-1">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile uppercase leading-none tracking-tight text-tertiary">
+        JUST MOVE <span class="text-primary-fixed">FASTER</span>
+</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+        Engineered with Dual-Density NitroFoam™ &amp; AeroPlate carbon fiber propulsion. Built to shatter your personal records.
+      </p>
+</div>
+<!-- CTA Button Cockpit -->
+<div class="z-10 grid grid-cols-2 gap- space-sm mt-5">
+<button class="flex items-center justify-center gap-2 bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-label-caps-bold uppercase py-3.5 px-3 rounded hover:bg-white transition-all active:scale-[0.98]">
+<span>Shop Now</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center bg-surface-container-high text-on-surface font-label-caps-bold text-label-caps-bold uppercase py-3.5 px-3 rounded hover:bg-surface-bright transition-all active:scale-[0.98]">
+<span>Collection</span>
+</button>
+</div>
+<!-- Performance Telemetry Specs Bar -->
+<div class="z-10 mt-5 pt-3.5 flex items-center justify-between bg-surface-container-low px-3 py-2 rounded">
+<div class="flex flex-col items-center">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant uppercase">WEIGHT</span>
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">182G</span>
+</div>
+<div class="h-6 w-px bg-surface-container-high"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant uppercase">OFFSET</span>
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">8MM DROP</span>
+</div>
+<div class="h-6 w-px bg-surface-container-high"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant uppercase">PROPULSION</span>
+<span class="font-label-caps-bold text-label-caps-bold text-primary-fixed">+89% RET</span>
+</div>
+</div>
+</section>
+<!-- 2. SHOP BY CATEGORY (Touch-Optimized Responsive Carousel) -->
+<section class="w-full px-gutter py-6 flex flex-col gap-3">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-3.5 bg-primary-fixed rounded-full"></span>
+<h2 class="font-headline-md text-headline-md tracking-wider uppercase text-tertiary">SHOP BY CATEGORY</h2>
+</div>
+<a class="font-label-caps-mono text-label-caps-mono text-primary-fixed hover:underline flex items-center gap-0.5" href="#">
+        VIEW ALL (12)
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+</a>
+</div>
+<!-- Horizontally Scrollable High-Impact Category Modules -->
+<div class="flex gap-3 overflow-x-auto pb-2 scrollbar-none snap-x snap-mandatory">
+<!-- Category 1: Running -->
+<a class="snap-start shrink-0 relative w-44 h-56 rounded bg-surface-container-high overflow-hidden group" href="#">
+<img alt="Running Category" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Athletic runner pacing on wet asphalt city track at dawn with neon city lights reflecting. High speed action framing focusing on performance running shoes and leg drive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOgWc_grmWEdcih8dTesD9Uqwt2QPbsxHQoevbN5oze0RWT7KlK5nQI1WAf8nmyz6GMaMDZa1XhyHbohvptnGNeCyJ_KEDEt-DsQqhA4DPPgH36zuoZMHULBlU_9ilfDeu4kd7wEarny32ZfhRWxyw1y0wD4_rqJeb6DaK9rSy55SpOXD7Ld6Kp9ZdtGuL2M2P9ygFFNFt--8cUSnNZuVeWhb5Q5nn4LLakjgS_uc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="absolute inset-x-3 bottom-3 flex flex-col">
+<span class="font-label-caps-mono text-[10px] text-primary-fixed uppercase font-semibold">48 Styles</span>
+<span class="font-headline-md text-headline-md text-tertiary uppercase leading-tight">RUNNING</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Marathon &amp; Road Speed</span>
+</div>
+</a>
+<!-- Category 2: Basketball -->
+<a class="snap-start shrink-0 relative w-44 h-56 rounded bg-surface-container-high overflow-hidden group" href="#">
+<img alt="Basketball Category" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dynamic indoor hardwood basketball court player doing high elevation crossover drive with dramatic arena spot lighting casting long shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL5CDe2qfMiYhBRgcMM8KjcObzTLnkaVYONS9-S0R-vNLyq6nZu6YGwVfYVEVu_7JhlesCCYb6YAN2OPEM8F2f1VqVG6u2xkKYb_N2smjOtF0kNTqiFmbcIaUFPo0sEvImnC4thlHett57NZep1eVunWTQCC8aVVR8w9-s4L01Utwauahw6YKf68UHL3fLKlnlFqBDcY4Aa6b80jF_ZYLxuuIkZy2j4RwZeX896n4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="absolute inset-x-3 bottom-3 flex flex-col">
+<span class="font-label-caps-mono text-[10px] text-primary-fixed uppercase font-semibold">32 Styles</span>
+<span class="font-headline-md text-headline-md text-tertiary uppercase leading-tight">BASKETBALL</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Court Dominance</span>
+</div>
+</a>
+<!-- Category 3: Training & Gym -->
+<a class="snap-start shrink-0 relative w-44 h-56 rounded bg-surface-container-high overflow-hidden group" href="#">
+<img alt="Training Category" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Fitness athlete performing explosive box jump in minimalist industrial gym setting with moody dark obsidian background and gym chalk in the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw51y8W79g1p24IqAVyaKvnQgXR_mpPHD1IuG2oQM7EzcbRjl4iJbrlAUYQV-jHyn6RFOY95Dx46iwdnplKStH-7ioQwNEhd8rV_PBUIW4vz7ccGLN0KS6M2KCCmk5jYo8R-pIETbePRCBeRn8wCDgH1HkFVnwcbTue0ZvLROrlVf94jGQa9eXpv0TOe5EzHO9syqp-2tt0WfmUtngT3WvdRTssplt6_u4j-40sQQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="absolute inset-x-3 bottom-3 flex flex-col">
+<span class="font-label-caps-mono text-[10px] text-primary-fixed uppercase font-semibold">24 Styles</span>
+<span class="font-headline-md text-headline-md text-tertiary uppercase leading-tight">TRAINING</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">HIIT &amp; Heavy Lift</span>
+</div>
+</a>
+<!-- Category 4: Street Lifestyle -->
+<a class="snap-start shrink-0 relative w-44 h-56 rounded bg-surface-container-high overflow-hidden group" href="#">
+<img alt="Lifestyle Category" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial urban streetwear styling of technical runners with oversized cargo apparel sitting on brutalist architectural concrete steps in Tokyo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACPS9m3iRh-Sacto3qXCWhQepyh_l4F_0uWMutt32_dQc7oZia9KWW3S8cfe79hBoIjX_h8ZMQGWBqQF7USKv7c8TkyIiF4NWFFJTCBto_q_VuIkI7W5Q-20yl6Xi2I6JYK5HNhsUC2gJq0wynPB3dqMtsQ7xkVn1vKwm_-Ys2ZERd2IBtVKMcdSofz0gYsXzcjsTWvb-EgUjwZcSJjn-umBn2TZxWmeh9h1M62_8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="absolute inset-x-3 bottom-3 flex flex-col">
+<span class="font-label-caps-mono text-[10px] text-primary-fixed uppercase font-semibold">39 Styles</span>
+<span class="font-headline-md text-headline-md text-tertiary uppercase leading-tight">LIFESTYLE</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Streetwear Aerostep</span>
+</div>
+</a>
+</div>
+</section>
+<!-- 3. TRENDING NOW PRODUCT CAROUSEL -->
+<section class="w-full px-gutter py-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-caps-mono text-[9px] uppercase font-bold tracking-widest">
+            HOT RIGHT NOW
+          </span>
+</div>
+<h2 class="font-headline-md text-headline-md tracking-wider uppercase text-tertiary">TRENDING NOW</h2>
+</div>
+<div class="flex gap-1.5">
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright active:scale-95 transition-all" id="carousel-prev">
+<span class="material-symbols-outlined text-sm">west</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright active:scale-95 transition-all" id="carousel-next">
+<span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+<!-- Product Card Row -->
+<div class="flex gap-3 overflow-x-auto pb-3 scrollbar-none snap-x snap-mandatory" id="product-slider">
+<!-- Item 1: Aeroblast V4 -->
+<div class="snap-start shrink-0 w-64 rounded bg-surface-container-low p-3 flex flex-col justify-between relative group">
+<button class="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-surface/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<div class="relative w-full h-40 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-3">
+<img alt="KNTX AeroBlast V4" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Side profile clean footwear studio photography of high performance road racing shoe in vibrant volt lime and phantom dark obsidian, sharp aerodynamic soles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_VFGRiQwrJJFDS92c_F-inPKralvc_7BVGla6CsovtweupIREQKESj6zoD98ilVb_EhBW9aS83MtWeSjMINKsam4ag3inI_KjMh0iyG2Daatk2Yet6Rj_aceT01Nuvamptxag9rM5LnJ2fa-wG17audBhIjI3jXZyW-56-O7qRAJO9w_NCbkMdIbm0INTvO3f7Yp4wV0qDnq57ZgB3uBR0gapr2abY_LuqCfNb6c"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-high/90 text-primary-fixed font-label-caps-mono text-[9px]">
+            CARBON PLATED
+          </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps-bold text-[11px] text-tertiary">4.9</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">(1.2k)</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-tertiary truncate">AEROBLAST V4</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Road Marathon / Phantom Volt</p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant">PRICE</span>
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary text-base">$220</span>
+</div>
+<button class="add-to-cart-btn flex items-center gap-1.5 px-3 py-2 bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-[11px] uppercase rounded hover:bg-white active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Velox Dunk Matrix -->
+<div class="snap-start shrink-0 w-64 rounded bg-surface-container-low p-3 flex flex-col justify-between relative group">
+<button class="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-surface/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<div class="relative w-full h-40 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-3">
+<img alt="Velox Dunk Matrix" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Mid top basketball sneaker in crisp optic white with icy translucent cyan outsole accents and electric neon yellow pull tabs displayed on dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUC1jOJHPUjinestNPX-HMvLGX9AiGUyP-9MzOAbcg0b-G5w6XY0w5PiEAK631dSKHuyzRGUumiUrHae0TaUswy01JNnFbSexgwKGl3dn8y_dZXOGzEDhoJBpIVB7H6ZV7bq5ys-1onF8krqure-zmQ-98dsVApH8tZvUbxta5DkKVzQKnrimxafB_Hny-a0JWBMoGrSoo5E3vPVXFOjiFfvuhk0xLh_y_D64uoYI"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-high/90 text-tertiary font-label-caps-mono text-[9px]">
+            COURT CUSHION
+          </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps-bold text-[11px] text-tertiary">4.8</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">(840)</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-tertiary truncate">VELOX DUNK MATRIX</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Street &amp; Hardcourt / Ice Volt</p>
+<div class="flex items-center justify-between mt-2 pt-2">
+<div class="flex flex-col">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant">PRICE</span>
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary text-base">$185</span>
+</div>
+<button class="add-to-cart-btn flex items-center gap-1.5 px-3 py-2 bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-[11px] uppercase rounded hover:bg-white active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Hyperfuse Pulse Trainer -->
+<div class="snap-start shrink-0 w-64 rounded bg-surface-container-low p-3 flex flex-col justify-between relative group">
+<button class="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-surface/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<div class="relative w-full h-40 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-3">
+<img alt="Hyperfuse Pulse Trainer" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Triple black tactical high-intensity athletic training shoe with matte finish textures, ribbed heel counter, and subtle gloss kinetic overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOe9dkXxttTPIFqEkYaLTsU6JW2BXuUg0HyiHwVI6V6rgvWMGniWWOuaQ5_DCf-Ho4SHxj-aSZnUSnWpm3qVzVONRS2BiP1GA2QMG_zAUM020fWYauGJOaV4kvPKz66PAf7JNppScdgl2cPuMlWdGA7nDVCJu_ms7eu8ttWA5JNUSlky1fdO_PQIwKxVtEjN-4fHVHR5n8ytucKfnFB8Br5a3HcTmFmXrMbBgmSa4"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-secondary-container text-primary font-label-caps-mono text-[9px]">
+            BESTSELLER
+          </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps-bold text-[11px] text-tertiary">4.9</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">(2.1k)</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-tertiary truncate">HYPERFUSE PULSE</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Cross-Train / Stealth Obsidian</p>
+<div class="flex items-center justify-between mt-2 pt-2">
+<div class="flex flex-col">
+<span class="font-label-caps-mono text-[9px] text-on-surface-variant">PRICE</span>
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary text-base">$160</span>
+</div>
+<button class="add-to-cart-btn flex items-center gap-1.5 px-3 py-2 bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-[11px] uppercase rounded hover:bg-white active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ATHLETE CAMPAIGN HERO BANNER -->
+<section class="w-full px-gutter py-4">
+<div class="relative w-full rounded-lg overflow-hidden bg-surface-container-high min-h-[360px] flex flex-col justify-end p-5">
+<img alt="KNTX Campaign Athlete" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="Intense high-contrast portrait of a male track sprinter in mid stride under rain floodlights at night, water droplets airborne, muscles tensed, wearing black and volt race apparel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC90Jc_dtiNIQ9c9hNftxQjtensIOxtxmShFJ2z4HuWh7cdi3XNEabMwUM5tAHrwM_Fx5ZsJrh-_25DBlc4ejcpnEGRgpi_k0tYtSUjeV7cFk_iHN4sRWhCTlOUJz9FihHAWw3HqR6CaaDUh-6iAF8VzhlejC3TUkc1V3aZrxWZ0ROFZqtbSP9eqppFSG7V80oe5ud2s1oNZLxHIOcqkf6G5tMpr9DGB1SZbSyCIbw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 self-start px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps-mono text-[9px] font-bold">
+          LIMITED VAULT DROP // 03
+        </div>
+<p class="font-headline-md text-headline-md uppercase text-primary-fixed leading-tight">
+          "SPEED IS NOT A GIFT.<br/>IT'S A DISCIPLINE."
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Co-developed with Olympic speed athletes to test aerodynamic energy retention past standard metabolic thresholds.
+        </p>
+<button class="mt-2 w-full flex items-center justify-center gap-2 bg-surface text-tertiary font-label-caps-bold text-label-caps-bold uppercase py-3.5 px-4 rounded hover:bg-surface-bright active:scale-[0.99] transition-all">
+<span class="material-symbols-outlined text-primary-fixed text-sm">lock_open</span>
+<span>Unlock Early Member Access</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 5. "NEW ARRIVALS" INTERACTIVE 2-COLUMN GRID -->
+<section class="w-full px-gutter py-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-3.5 bg-primary-fixed rounded-full"></span>
+<h2 class="font-headline-md text-headline-md tracking-wider uppercase text-tertiary">NEW ARRIVALS</h2>
+</div>
+<span class="font-label-caps-mono text-label-caps-mono text-on-surface-variant">4 NEW DROPS</span>
+</div>
+<!-- 2-Column High-Density Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Grid Card 1 -->
+<div class="rounded bg-surface-container-low p-2.5 flex flex-col justify-between group">
+<div class="relative w-full h-32 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-2">
+<img alt="Phantom Edge" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" data-alt="Sleek racing sneaker angled top down view showcasing high breathability matrix knit upper in lime and gunmetal grey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz-40DYTQpsfoWVMUEBjP_MwRbresLfga6HnJyD9XSuA2uuI9d9MoUEb40SivqMbPyID88XZsbzsMUpfuLka6OnaEZKkqVpC3fPpN4ElvKRNW8iCDKHFbMe5gnjnRcajICBGS7voVsSaOnq4EEHugwGED0FtO39mGGKx984tTsm2aNb15BlMsD7yAakKFjHtocZf8PV9mnE3Q7ZPvT6YeJEDZXpNMGcJ3HUah58oA"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps-mono text-[8px] font-bold">
+            NEW
+          </span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-headline-md text-[16px] text-tertiary uppercase truncate">PHANTOM EDGE</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Ultralight Tempo</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">$195</span>
+<button class="add-to-cart-btn w-7 h-7 rounded bg-surface-container-high flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grid Card 2 -->
+<div class="rounded bg-surface-container-low p-2.5 flex flex-col justify-between group">
+<div class="relative w-full h-32 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-2">
+<img alt="Storm Runner Shield" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" data-alt="Technical all-weather trail running shoe with waterproof membrane, aggressive lugged Vibram outsole, and neon orange cord eyelets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Ea6QINS5kKxdtAL-xcCtpHXGVcJLDRTCf1kSefC8At80PRgIYwh4ZJawi3-ZTapeYuVvXNvHflAC0WtOhjljZSDoJQqT_Ez0Y1oKqOUfB1AQ1FJbIUQBK42MoZp5s3IezAbE8gg7fYw1TnRp6GAh55lifEc6V2BeUbmYSQC3OlPiujtiy5_CHNRqlS0KMwoyD6PH3XvnscVBwfrk1nRc1LVEKVo3W-8X7cMvXUI"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary font-label-caps-mono text-[8px] font-bold">
+            WATERPROOF
+          </span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-headline-md text-[16px] text-tertiary uppercase truncate">SHIELD GTX RUN</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Wet Road Armor</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">$210</span>
+<button class="add-to-cart-btn w-7 h-7 rounded bg-surface-container-high flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grid Card 3 -->
+<div class="rounded bg-surface-container-low p-2.5 flex flex-col justify-between group">
+<div class="relative w-full h-32 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-2">
+<img alt="Solar Cloud Recovery" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" data-alt="Ergonomic architectural recovery slide sandal sculpted in dense hyper-cushion foam with aggressive contouring in matte bone white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_c2p18KkRcfYxhMrdT5y6AxopAZawvLUE4TRObcA297w1-s1Ng4l9XzWTlJmQrFwMWbBTGREbUtbb4hD58-GKWVynhgHwH4xjVVJ_x-AtumppBpZd2NjrZTIQ-1K8P4RwpKIpMnNyjeEHNyUZkjFG1wkPbK4kzzwkKpJzccWYjos2Kz_Bsa-k-4tS-UG8fbhTemyM6650_Pd_6PMEfPj9Y4w6ipIokIuMRoxxXI4"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-secondary-container text-primary font-label-caps-mono text-[8px] font-bold">
+            RESTOCK
+          </span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-headline-md text-[16px] text-tertiary uppercase truncate">SOLAR CLOUD SLIDE</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Post-Race Recovery</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">$65</span>
+<button class="add-to-cart-btn w-7 h-7 rounded bg-surface-container-high flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grid Card 4 -->
+<div class="rounded bg-surface-container-low p-2.5 flex flex-col justify-between group">
+<div class="relative w-full h-32 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center mb-2">
+<img alt="Aero Low Pro Street" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" data-alt="Low profile streetwear sneaker with perforated premium nubuck, raw edge foam tongue, and electric volt accent stitching." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--uqSYocgXFMtzN6qGIp5ZX0NjocvgtrVzB4o3jbnd0F-tGNgvKLIeeckgGg1iCMJaGWkGjpp9vPt_96r_V0rMlNdvkzxaePxlXUrxynqAM_LhyN__m1zJno334785nnLGuBOY141DzD4vQKMYkCQ37FoZTAR-IgxACXfgq9qwzaUhIcFBE7yKOB9aKTBdsnicbw7RtyjI6js-896eARf4WQ8yj1TnYozg3VU_1c"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps-mono text-[8px] font-bold">
+            MEMBERS ONLY
+          </span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-headline-md text-[16px] text-tertiary uppercase truncate">AERO LOW PRO</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant truncate">Pavement Velocity</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">$140</span>
+<button class="add-to-cart-btn w-7 h-7 rounded bg-surface-container-high flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. MEMBER BENEFITS & ATHLETE PERKS -->
+<section class="w-full px-gutter py-4">
+<div class="rounded bg-surface-container p-5 flex flex-col gap-4 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+<span class="font-headline-md text-headline-md text-tertiary uppercase tracking-wider">KNTX CLUB ACCESS</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed/20 text-primary-fixed font-label-caps-mono text-[9px] uppercase font-bold">
+          FREE TIER
+        </span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="flex items-start gap-3 p-2.5 rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-primary-fixed text-lg mt-0.5">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">Free Express Global Courier</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">2-day dispatch guarantee on all performance tiers.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-primary-fixed text-lg mt-0.5">timer</span>
+<div class="flex flex-col">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">Exclusive 24H Drop Prioritization</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Secure Vault releases before public release.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-primary-fixed text-lg mt-0.5">published_with_changes</span>
+<div class="flex flex-col">
+<span class="font-label-caps-bold text-label-caps-bold text-tertiary">30-Day Road Trial Guarantee</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Run in them outdoors. Return with zero questions asked.</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-1 bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-label-caps-bold uppercase py-3.5 rounded hover:bg-white active:scale-[0.98] transition-all">
+        Join KNTX Club (Free)
+      </button>
+</div>
+</section>
+<!-- 7. COMMUNITY SPEEDMARK FEED (#JUSTMOVEFASTER) -->
+<section class="w-full px-gutter py-6 flex flex-col gap-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps-mono text-[10px] text-primary-fixed uppercase tracking-widest font-bold">@KNTX_ATHLETICS</span>
+</div>
+<h2 class="font-headline-md text-headline-md uppercase text-tertiary tracking-wider">#JUSTMOVEFASTER</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tag your mile splits and track sessions to be featured in the global telemetry reel.</p>
+</div>
+<!-- 4-Tile Shoppable Community Mosaic -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="relative h-44 rounded bg-surface-container-high overflow-hidden group">
+<img alt="Community Runner 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Urban runner in low crouch stance at street crossing wearing neon-accented running shoes, dynamic candid perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVVZCfHUWuFuKq78Osmm-SZtQO57zhZA_b6nnWWut_MIh6nZbSaVaTEGteljqG5fKEDN9mLyoVJHDMnRMoxmnWTlkzVZfpNnLjDeYg8HIF5ypWhgClb0QpZp2IQNQEn9D5sRTbSBacouAKisy1FksdagURO9S45sSYDMFSTaSrCDYvWMSxKBJFgw82-3iX5m0MnkREuVEL0yHHzlLgn3X83CYy2d7OMEJC6mt9auA"/>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps-mono text-[9px] text-tertiary">@marcus.runs</span>
+</div>
+</div>
+<div class="relative h-44 rounded bg-surface-container-high overflow-hidden group">
+<img alt="Community Runner 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up athletic footwear detail tied laces on red polyurethane running track surface during golden hour workout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5AVoSYNWLmRtqAf6AER_JEd9uSxUOsPsqAoLkUpJkHm4rVI2SmuVraOanICHWUJtzaPMNlISeRcvum_V35dX0gQ5VwgR6Wpajn3GISP4IXXnlg1PalQloAgHhD7K6WS5DR1udjjZwzE7Rn4vUEg7aKMypA_zj10yfsaUr5FrJMLOATbLZ5n25JlPLhAnFe-96-YwG47epFz2LglWtu_Wpi8iAgIMERWy_YE1nUn4"/>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps-mono text-[9px] text-tertiary">@elena_sprint</span>
+</div>
+</div>
+<div class="relative h-44 rounded bg-surface-container-high overflow-hidden group">
+<img alt="Community Runner 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Basketball player mid-flight dunking on outdoor street court with city skyline background in dusk light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANCQXCZPyTWgaxz9k3Vl4xlYLBR-4GCbdCtMmTOSYWklAFUgLQoyYdgKNlYrvJ2yp_pWB2hCVX2g0P5pzQ_mp4hlXU_XMKFs0JjhQ4CGj6Rgr3YXnWa8B_q3fEZpxKu2kwqhKzYPAb670UxfyCAXTyxYvnGF7jF2vIIzuexqtJSfCRqFM7i2c_2sTUgFG4dwDAl2LxtPlpj4R3qm87QH6NPOm0-nndEkvu363zKKA"/>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps-mono text-[9px] text-tertiary">@court_beast</span>
+</div>
+</div>
+<div class="relative h-44 rounded bg-surface-container-high overflow-hidden group">
+<img alt="Community Runner 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Streetwear fashion enthusiast standing on metro station platform wearing futuristic sneakers with clean architectural geometry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWh3ASY91XFGw40X58SmiinhVlJoQbBYX0UAovyaR1RqPpo83OTzRY69u5TNB8p-BUSnZZzFW6BPCm0Sg6757HQ_-mqO5DYXYC5YTadXQAYXI4YK6USokpPtBRrLWs4iQvgOIqWlF8Jg1Ma9J1t4kdm7u10dugskTgHWtXPkbFGYGC_IlIBBwoZ9imW2BIN-QYiR-wYPMnCs8vMIhGkt4uOidt_QdGbuusdOdSSGQ"/>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps-mono text-[9px] text-tertiary">@kai_tokyo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. NEWSLETTER & FAST SIGN-UP DISPATCH -->
+<section class="w-full px-gutter py-6">
+<div class="rounded bg-surface-container-low p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed">bolt</span>
+<h3 class="font-headline-md text-headline-md uppercase text-tertiary">NEVER MISS A DROP</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Receive early prototype alerts, athlete testing applications, and secret vault passwords directly.
+      </p>
+<form class="flex flex-col gap-2 mt-1" id="newsletter-form">
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-highest px-3.5 py-3 rounded text-on-surface font-label-caps-mono text-[11px] placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-bright" id="email-input" placeholder="ENTER ATHLETE EMAIL" required="" type="email"/>
+</div>
+<button class="w-full bg-primary-fixed text-on-primary-fixed font-label-caps-bold text-label-caps-bold uppercase py-3.5 rounded hover:bg-white active:scale-[0.98] transition-all" type="submit">
+          SUBSCRIBE TO DISPATCH
+        </button>
+</form>
+<div class="hidden text-center text-primary-fixed font-label-caps-mono text-[10px] uppercase font-bold mt-1" id="newsletter-feedback">
+        ✓ ACCESS GRANTED. CHECK INBOX FOR WELCOME PROTOCOL.
+      </div>
+</div>
+</section>
+<!-- 9. COMPREHENSIVE MOBILE ACCORDION FOOTER -->
+<footer class="w-full px-gutter pt-6 pb-4 flex flex-col gap-6 bg-surface-container-lowest">
+<!-- Accordion Blocks -->
+<div class="flex flex-col gap-2">
+<!-- Accordion 1 -->
+<details class="group rounded bg-surface-container-low overflow-hidden">
+<summary class="flex items-center justify-between p-3.5 cursor-pointer list-none">
+<span class="font-label-caps-bold text-label-caps-bold uppercase text-tertiary">CUSTOMER SUPPORT</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-3.5 pb-3.5 flex flex-col gap-2 font-body-sm text-[13px] text-on-surface-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#">Track Order &amp; Telemetry</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Returns &amp; 30-Day Trial</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Shoe Size Matrix Guide</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Contact Performance Lab</a>
+</div>
+</details>
+<!-- Accordion 2 -->
+<details class="group rounded bg-surface-container-low overflow-hidden">
+<summary class="flex items-center justify-between p-3.5 cursor-pointer list-none">
+<span class="font-label-caps-bold text-label-caps-bold uppercase text-tertiary">ENGINEERING &amp; SUSTAINABILITY</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-3.5 pb-3.5 flex flex-col gap-2 font-body-sm text-[13px] text-on-surface-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#">Dual-Density NitroFoam™ Tech</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Circular Carbon Recycled Plate Program</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Zero-Waste Knit Prototyping</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Impact Telemetry Report 2024</a>
+</div>
+</details>
+<!-- Accordion 3 -->
+<details class="group rounded bg-surface-container-low overflow-hidden">
+<summary class="flex items-center justify-between p-3.5 cursor-pointer list-none">
+<span class="font-label-caps-bold text-label-caps-bold uppercase text-tertiary">COMPANY &amp; CAREERS</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-3.5 pb-3.5 flex flex-col gap-2 font-body-sm text-[13px] text-on-surface-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#">About KNTX Propulsion Labs</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Athletes &amp; Sponsorships</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Biomechanical Careers (Hiring)</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Press &amp; Media Kit</a>
+</div>
+</details>
+</div>
+<!-- Supported Payments & Security -->
+<div class="flex flex-col gap-2 pt-2 items-center">
+<span class="font-label-caps-mono text-[9px] uppercase tracking-widest text-on-surface-variant">ENCRYPTED ATOMIC TRANSACTIONS</span>
+<div class="flex items-center gap-3 text-on-surface-variant/70">
+<span class="font-label-caps-bold text-[11px] px-2 py-1 rounded bg-surface-container-high">APPLE PAY</span>
+<span class="font-label-caps-bold text-[11px] px-2 py-1 rounded bg-surface-container-high">VISA</span>
+<span class="font-label-caps-bold text-[11px] px-2 py-1 rounded bg-surface-container-high">MASTERCARD</span>
+<span class="font-label-caps-bold text-[11px] px-2 py-1 rounded bg-surface-container-high">KLARNA</span>
+</div>
+</div>
+<!-- Copyright & Disclaimer -->
+<div class="flex flex-col items-center gap-1 text-center text-on-surface-variant pt-2">
+<p class="font-label-caps-mono text-[10px]">© 2024 KNTX PERFORMANCE FOOTWEAR CORP. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-3 text-[11px] font-label-sm">
+<a class="hover:text-primary-fixed" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-primary-fixed" href="#">Terms of Use</a>
+<span>•</span>
+<a class="hover:text-primary-fixed" href="#">Legal Telemetry</a>
+</div>
+</div>
+</footer>
+<!-- Delight Micro-Interaction Toast Notification Container -->
+<div class="fixed bottom-20 left-4 right-4 z-50 pointer-events-none transform translate-y-16 opacity-0 transition-all duration-300 flex items-center justify-between p-3.5 bg-primary-fixed text-on-primary-fixed rounded shadow-2xl" id="cart-toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+<span class="font-label-caps-bold text-label-caps-bold uppercase tracking-wider">ADDED TO PROPULSION BAG</span>
+</div>
+<span class="font-label-caps-mono text-[10px] font-bold underline cursor-pointer pointer-events-auto">VIEW BAG</span>
+</div>
+</div>
+<script>
+  (function initKntxInteractions() {
+    // 1. Interactive Quick Add-To-Bag Delight Micro-Toast
+    const addButtons = document.querySelectorAll('.add-to-cart-btn');
+    const toast = document.getElementById('cart-toast');
+    let toastTimeout;
+
+    addButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Button kinetic bounce response
+        btn.classList.add('scale-90');
+        setTimeout(() => btn.classList.remove('scale-90'), 150);
+
+        // Show Toast
+        if (toast) {
+          clearTimeout(toastTimeout);
+          toast.classList.remove('translate-y-16', 'opacity-0');
+          toast.classList.add('translate-y-0', 'opacity-100');
+
+          toastTimeout = setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-16', 'opacity-0');
+          }, 2400);
+        }
+      });
+    });
+
+    // 2. Smooth carousel scroll buttons
+    const slider = document.getElementById('product-slider');
+    const nextBtn = document.getElementById('carousel-next');
+    const prevBtn = document.getElementById('carousel-prev');
+
+    if (slider && nextBtn && prevBtn) {
+      nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: 240, behavior: 'smooth' });
+      });
+      prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -240, behavior: 'smooth' });
+      });
+    }
+
+    // 3. Fast Newsletter Subscription Micro-Interaction
+    const newsForm = document.getElementById('newsletter-form');
+    const newsFeedback = document.getElementById('newsletter-feedback');
+    const emailInput = document.getElementById('email-input');
+
+    if (newsForm && newsFeedback) {
+      newsForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (emailInput && emailInput.value.trim() !== '') {
+          newsForm.classList.add('hidden');
+          newsFeedback.classList.remove('hidden');
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary-fixed"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-14 h-14 transition-all text-primary-fixed" data-path="home-showcase" href="#"><span class="material-symbols-outlined">home</span><span class="font-label-caps-mono text-label-caps-mono uppercase">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-14 h-14 text-on-surface-variant hover:text-primary-fixed transition-all" data-path="shop-catalog" href="#"><span class="material-symbols-outlined">grid_view</span><span class="font-label-caps-mono text-label-caps-mono uppercase">Shop</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-14 h-14 text-on-surface-variant hover:text-primary-fixed transition-all" data-path="vault-drops" href="#"><span class="material-symbols-outlined">bolt</span><span class="font-label-caps-mono text-label-caps-mono uppercase">Drops</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-14 h-14 text-on-surface-variant hover:text-primary-fixed transition-all" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="font-label-caps-mono text-label-caps-mono uppercase">Wishlist</span></a><a class="relative flex flex-col items-center justify-center gap-space-xs w-14 h-14 text-on-surface-variant hover:text-primary-fixed transition-all" data-path="shopping-bag" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute -top-1 -right-2 flex items-center justify-center w-3.5 h-3.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[8px] font-bold">2</span></div><span class="font-label-caps-mono text-label-caps-mono uppercase">Bag</span></a></div></nav></body></html>

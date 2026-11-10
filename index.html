@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stitch E-Commerce Platform</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #cdf200, #ff5721);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p { color: #888; margin-bottom: 2.5rem; font-size: 1.1rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      width: 100%;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #cdf200;
+    }
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body { padding: 1.25rem; }
+    .card-body h2 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff; }
+    .card-body span {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .tag-beauty { background: rgba(201,147,123,0.2); color: #c9937b; }
+    .tag-athletic { background: rgba(205,242,0,0.15); color: #cdf200; }
+  </style>
+</head>
+<body>
+  <h1>Stitch E-Commerce</h1>
+  <p>Select a storefront to preview</p>
+  <div class="grid">
+    <a class="card" href="aura_lumi_re_luxury_beauty_cosmetics_homepage/code.html">
+      <img class="card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_zGfy7Pd0pc0TH709CqxGTIRL1-E5x4jpaWuu-q3ZVOMBuOms2BaKmFwk-YsDTSPXntfADI3fbuvip0zbSEGmWxUx71V4qnA84QKfY0Sr7hqeN6GJ0NL9_i90ZDfDwg8QyzBvBi75x54VGELm6BCTmQ6bEfjF2emgEuzWsOgTq1TBnKX-UUA5bnENKvxQyHBjDIV9-p5iP91Kbcny4nYemublrDo-nYWjfAtEIc" alt="Aura Lumière"/>
+      <div class="card-body">
+        <h2>Aura Lumière</h2>
+        <span class="tag-beauty">Luxury Beauty & Cosmetics</span>
+      </div>
+    </a>
+    <a class="card" href="kntx_footwear_home_showcase/code.html">
+      <img class="card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnKyLK9ytHtyjE6nkxe97ZqTX3Tr3u04Di6dU2_VirVgWnVp-hruQUa-ciNWiVBAQ5IpDUJOX8p4aucF7NFW9bYfRjBpp2_a3z5h-gP8oPXBZnQFa4F7B-63forGxPElNJyD_PVFLWDEnacEwjU6dTQ4L9rjFmYnYKvfl95j3gKad6ivW4Ml8avn8vUTJiKCe5lrObB4FcIZmop0E2_PHpILHoYIgk26KE2bMXreg" alt="KNTX Footwear"/>
+      <div class="card-body">
+        <h2>KNTX Footwear</h2>
+        <span class="tag-athletic">Athletic Footwear</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
+

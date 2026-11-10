@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed": "#311304", "error": "#ba1a1a", "inverse-primary": "#cec4c5", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#653d29", "primary-fixed": "#ebe0e1", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-dim": "#dcd9d8", "surface-tint": "#645d5e", "on-surface": "#1b1c1b", "secondary": "#80543f", "on-tertiary-fixed-variant": "#623f18", "outline-variant": "#d0c4c5", "inverse-surface": "#30302f", "secondary-fixed": "#ffdbcc", "inverse-on-surface": "#f3f0ee", "surface-container": "#f0edeb", "tertiary-container": "#2f1800", "on-primary-container": "#8b8384", "background": "#fcf9f7", "on-primary-fixed": "#1f1a1b", "surface": "#fcf9f7", "tertiary-fixed-dim": "#f0bd8b", "on-secondary-container": "#794d39", "on-background": "#1b1c1b", "surface-bright": "#fcf9f7", "on-error-container": "#93000a", "primary-container": "#211c1d", "secondary-container": "#fdc2a8", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-container-highest": "#e5e2e0", "secondary-fixed-dim": "#f4b9a0", "tertiary": "#080300", "surface-container-low": "#f6f3f1", "on-surface-variant": "#4d4546", "primary": "#050303", "surface-container-high": "#eae8e6", "on-tertiary-fixed": "#2c1600", "on-tertiary-container": "#a97d50", "tertiary-fixed": "#ffdcbd", "primary-fixed-dim": "#cec4c5", "on-primary-fixed-variant": "#4c4546", "surface-variant": "#e5e2e0", "error-container": "#ffdad6", "outline": "#7e7576" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"] }, fontSize: { "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.12em", fontWeight: "600" }], "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }], "headline-sm": ["22px", { lineHeight: "30px", letterSpacing: "0em", fontWeight: "500" }], "headline-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.08em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600" }], "display-lg-mobile": ["38px", { lineHeight: "46px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(201,147,123,0.08)]"><div class="h-28 flex flex-col justify-between"><div class="bg-secondary/10 px-margin-mobile py-1 flex items-center justify-center"><p class="font-label-sm text-label-sm text-secondary tracking-widest text-center truncate uppercase">COMPLIMENTARY LUMINOUS MINI TRIO ON ORDERS OVER $85 • CODE: GLOW</p></div><div class="px-margin-mobile flex items-center justify-between gap-space-sm py-1"><div class="flex items-center gap-space-sm"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-normal leading-tight">AURA LUMIÈRE</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Discover</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><a aria-label="Wishlist" class="w-11 h-11 relative flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] flex items-center justify-center leading-none">3</span></a><a aria-label="Shopping Bag" class="w-11 h-11 relative flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container transition-colors" data-path="bag" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">2</span></a><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrA89TCVCTG2hDVbHscJmqROahjSAWc-gJwuBxUfm3Xfa3zxkMMmjkgmAGsTi3-BETjzf-tUO5cE50pGRHhh-zxUo1coIcVdLzJTY7ug6ppQI5PWYaASAXmt2660UgZhQBifaWZj4yNdSxZ1XxumOtnT6Ec1Uj1zff-Rmbz3zgQzHebvWM6BKHKdNqtnOfpe0whSEpEawyIU_UpCajb4L5QXzM3TFsTTsIkS5TAZZuaC"/></div></div></div><div class="px-margin-mobile overflow-x-auto flex items-center gap-space-sm pb-2 no-scrollbar"><button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase whitespace-nowrap transition-all">All</button><button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Bestsellers</button><button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Skincare</button><button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Makeup</button><button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Complexion</button><button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Glow Lab</button><button class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md uppercase whitespace-nowrap hover:bg-surface-container-high transition-all">Sale</button></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden px-margin-mobile">
+<div class="relative w-full rounded-xl overflow-hidden min-h-[520px] flex flex-col justify-end p-space-lg shadow-xl" data-alt="A macro studio portrait of a woman with radiant, dewy, sunlit luminous skin and subtle glossy makeup, framed with warm rose-gold lighting, natural botanical glow, high-end editorial beauty magazine aesthetic, soft amber highlights and peach undertones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr_zGfy7Pd0pc0TH709CqxGTIRL1-E5x4jpaWuu-q3ZVOMBuOms2BaKmFwk-YsDTSPXntfADI3fbuvip0zbSEGmWxUx71V4qnA84QKfY0Sr7hqeN6GJ0NL9_i90ZDfDwg8QyzBvBi75x54VGELm6BCTmQ6bEfjF2emgEuzWsOgTq1TBnKX-UUA5bnENKvxQyHBjDIV9-p5iP91Kbcny4nYemublrDo-nYWjfAtEIc')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/45 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Trust Pill -->
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface/20 backdrop-blur-md shadow-sm">
+<div class="flex items-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface font-semibold tracking-wider">4.9/5 • 42,000+ REVIEWS</span>
+</div>
+<!-- Editorial Typography -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm tracking-widest text-secondary-container uppercase">Botanical Radiance Elixir</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary leading-tight font-normal">
+            Beauty That <br/><span class="italic font-normal">Belongs to You</span>
+</h1>
+<p class="font-body-sm text-body-sm text-surface-container-low max-w-xs mt-1">
+            Consciously crafted botanical elixirs and multidimensional pigments tailored to your unique, natural illumination.
+          </p>
+</div>
+<!-- Twin Luxury CTAs -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-12 rounded-full bg-gradient-to-r from-secondary to-on-secondary-container text-on-secondary flex items-center justify-center gap-2 px-5 font-label-md text-label-md uppercase tracking-wider shadow-lg active:scale-95 transition-transform">
+<span>Shop Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="h-12 px-5 rounded-full bg-surface-container-lowest/30 backdrop-blur-xl text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-1.5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+<span>Find Shade</span>
+</button>
+</div>
+<!-- Micro Tagline Strip -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 text-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">eco</span>
+<span class="font-label-sm text-label-sm">100% Clean Botanical</span>
+</div>
+<div class="flex items-center gap-1.5 text-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">cruelty_free</span>
+<span class="font-label-sm text-label-sm">Zero Synthetic Talc</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Shop by Category -->
+<section class="mt-space-xl flex flex-col gap-space-md">
+<div class="px-margin-mobile flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">The Collection</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curated Categories</h2>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-0.5" href="#">
+<span>View All</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- Category Horizontal Scroll -->
+<div class="flex gap-space-sm overflow-x-auto px-margin-mobile no-scrollbar pb-1">
+<!-- Item 1 -->
+<div class="flex-shrink-0 w-36 flex flex-col gap-2 group cursor-pointer">
+<div class="relative w-36 h-44 rounded-xl overflow-hidden bg-surface-container p-2 flex flex-col justify-between" data-alt="Close up luxurious texture of velvet creamy lipstick swatched on frosted stone with rose petals and warm sunlight, soft neutral and coral pigments." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8eIMgEiX8pzrUgS78cr64_sprXc6InHsSo7iTkSKUzPVHUjvhyk2c3798bZKFB82UVgIjU961I6B2ZWS4IwwNBSBoWThYBzH34Y2NX9CNgh3MaqVlUvxLItzLgvoCLZAbm2zci1rXWET09DLyxIeA9aqmar4dmpll9p0YIQuszdj1WJIA7t8g82MOecDN8i5VnAmhyXxPCndHUgmYcuTEJZGeE8FN4Aw-x6ePlRk')">
+<div class="self-end px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold">18 Shades</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Silk Velour Lips</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lipsticks &amp; Tints</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex-shrink-0 w-36 flex flex-col gap-2 group cursor-pointer">
+<div class="relative w-36 h-44 rounded-xl overflow-hidden bg-surface-container p-2 flex flex-col justify-between" data-alt="An amber glass bottle of luxury liquid foundation with shimmering skin tint drop splashing on a minimalist travertine pedestal, warm diffused editorial light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCByVoKuNhbxp2UdjRs2LEds7uY_1T0YOD0zQeQ83NsAzb-mpse70g9-tXBctn6iEM8m1npgLHy9bdVYkgrGwQQOBpYNCvmVW-RzJnpd0-sO7AY0GIbrOWRResAmwqR0-cHVZ_k4qDJVoHWTawskNAUUNkkBprrqxQVtcqONDKBwDUDCOU-ybbDPXR_LkvDhnW0-2-MFhItmTTHiETzaMqBZWxT58ihFYVLTu1hPAE')">
+<div class="self-end px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold">42 Shades</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Luminous Skin Elixir</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Foundation &amp; Glow</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex-shrink-0 w-36 flex flex-col gap-2 group cursor-pointer">
+<div class="relative w-36 h-44 rounded-xl overflow-hidden bg-surface-container p-2 flex flex-col justify-between" data-alt="Sleek gold-rimmed eyeshadow compact opened to reveal multidimensional chromatic warm copper, champagne and terracotta powders with botanical micro-pearl reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPAbHwfZOp33NVrZKHHj3T2oIlfq9PqohZwAGPsdhOO6PuKxyOMTWbv8_R2tUnHZq-y2aVG2wQnSoCm2F5T88J9sN5TtdU5HbPsxUa4y_CwUEGZpyIju9ulo7THKVXQLO-jjNz3rLG4PMU6Tl029DjU_qL4uc-ibvdgmbkqai0uDlp5oY1oW3STokvnd1GAhdBV2hvXmSoJpxFnrbeqi3u7tfIoIY0r16s2Wu5Jd0')">
+<div class="self-end px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold">Pigments</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Sculpted Chromatic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Eyes &amp; Brow Arch</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex-shrink-0 w-36 flex flex-col gap-2 group cursor-pointer">
+<div class="relative w-36 h-44 rounded-xl overflow-hidden bg-surface-container p-2 flex flex-col justify-between" data-alt="Clear dropper bottle dispersing peptide hyaluronic serum droplets on clean water ripples with fresh white lotus and rosewater aura, pure dewy skincare." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhzCannFeo_-K1WgcDn5LoKTKXcgtPanTK1owTj_jQmIPi7hiPABABfLeMbtGhZfNEfL77QkXN4xS4GYtATMRaNAd7iKmx0g2w_o7qPLP_C0qrlnAB6Ko42CEn5xBocYoaFF610x-fMrvECJsDJtniDqPv0-a5tXnYlL293aJzxAVxmSLD8iYV49RIBmiMeEBnIUAbed30ys9OvfQY-4z_5QfugfycGO30K5nfoZY')">
+<div class="self-end px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold">Cellular</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Dew Drop Plump</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Skincare Serums</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex-shrink-0 w-36 flex flex-col gap-2 group cursor-pointer">
+<div class="relative w-36 h-44 rounded-xl overflow-hidden bg-surface-container p-2 flex flex-col justify-between" data-alt="Heavy sculpted glass perfume flacon filled with honey-gold fragrance mist surrounded by subtle dried orange blossom and bergamot leaves." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqxtpgOq9HXvm14dSXrbzRx_0qNYBRyqpEvt6Xidp631PoYy9tjVVfV8-wFXqw25-pHYGCemCOfqNN2xesWqtjXx1MzKWQJC36Guhs4kVHh3FGol110t_b5AkqWCBvFSehCkGmvkBlPjyLievugq1tnO_cD3wP_EjPT0htZ6DEh3c3iWYqjQY6U-f6z75Ss8lf73fkgT0xa9dNzNcq2hm7I37hZiR5beXketoUMfQ')">
+<div class="self-end px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold">Ritual</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Aura De Parfum</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fragrance &amp; Mist</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bestsellers Carousel with Interactive Swatches -->
+<section class="mt-space-xl flex flex-col gap-space-md">
+<div class="px-margin-mobile flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">The Icons</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Most Loved Rituals</h2>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Previous" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">west</span>
+</button>
+<button aria-label="Next" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+<!-- Product Cards Grid -->
+<div class="px-margin-mobile flex flex-col gap-space-md">
+<!-- Card 1 -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container flex items-center justify-center" data-alt="Minimalist luxury glass pump dispenser of liquid foundation reflecting soft golden light with a smooth swatch of creamy makeup beside it, pure clean editorial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9Cm8gJX5mDVc7w-ARkr-PgXPFRLKoa6pKYC1fjqmUjbqF6da1vdCHvrvpm3pkVMuhIDuZyCUzuFG3XYzSWrWOCScMwkGCxlG07AplgGnsUkRGcn7vDwHwV_j40QTk-4CuQOiyVv7KaLGTIfkZ9ApYRmBQaoPRxqVNFGhNCpjI4H0QUrLO3NvG3-4a7SMM1XmMbBXnfl8AOYiwszpKQxqkY_gR6ydh2Yf4hrfhn1M')">
+<div class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-[9px] uppercase tracking-widest font-semibold">
+            Radiance 24H
+          </div>
+<button aria-label="Wishlist" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(3,410)</span>
+</div>
+<span class="font-headline-sm text-[18px] text-primary font-semibold">$48</span>
+</div>
+<h3 class="font-headline-sm text-[19px] text-on-surface leading-tight">Lumière Silk Glow Liquid Foundation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Breathable medium-to-buildable coverage with squalane and niacinamide.</p>
+</div>
+<!-- Skin Tone Swatches -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="w-6 h-6 rounded-full bg-[#f6ded3] shadow-sm transform scale-110 p-0.5" title="Fair Rose"></button>
+<button class="w-6 h-6 rounded-full bg-[#e3be9c] shadow-sm p-0.5" title="Warm Beige"></button>
+<button class="w-6 h-6 rounded-full bg-[#a9754f] shadow-sm p-0.5" title="Rich Amber"></button>
+<button class="w-6 h-6 rounded-full bg-[#52301c] shadow-sm p-0.5" title="Deep Espresso"></button>
+<span class="font-label-sm text-[10px] text-on-surface-variant ml-1">+38 shades</span>
+</div>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Bag</span>
+</button>
+</div>
+</div>
+<!-- Card 2 & 3 in compact 2-column format -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container" data-alt="Chic gloss tube with metallic rose gold cap and crystalline gloss applicator tip glistening with peptide lip nectar against pale blush silk." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaFtzX5CDV2qelo3eN_dELFAnBFydTdPg2L2j33ozSqxXFSCDEAphno0G6Jx9OFo8q5YSGiG14-5J_wsCuxrLWDdNMmOoHhUfJ18LAzVowjJARTXawNCh63G79EZvePU07jiTgZNaYiba-ex-Vhsrqcl2rWBanBbLmYvd084QOn9jzoLXwbHf6rrX1TV69hAnoXOPI9B2vkepJoRJE1rlWkaWy943Gafeo_6m1SaE')">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[8px] uppercase tracking-wider font-semibold">Bestseller</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.8</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(1.9k)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface leading-snug line-clamp-1">Dew Drop Plumping Lip Glaze</span>
+<span class="font-body-sm text-[13px] font-semibold text-primary mt-0.5">$28</span>
+</div>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="w-4 h-4 rounded-full bg-[#e88d8b]"></span>
+<span class="w-4 h-4 rounded-full bg-[#c27c62]"></span>
+<span class="w-4 h-4 rounded-full bg-[#dfa49e]"></span>
+</div>
+</div>
+<button class="w-full mt-3 py-2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shopping_bag</span>
+<span>Add</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container" data-alt="Heavy frosted glass jar of botanical blue tansy cleansing balm with melted golden oil swirl on a spatula and fresh organic botanical petals." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB836lofTD8mKfkm_nsETbsH87vciV4FEucOePvBkIzxo02H_JyViovdTtZcj0hV6plpGKAjkMjusW2QcLUg-jG9acmjpi7zHoEtn46YdW-Oh39dYH01w0EIaQV3teNkELSxoAoc0CuGa9Becsc4ZiIioUp7uWFgu-jl7Kby_n9pGWqKFMhogNozkWXDBwt_g20mbXWgt7WQbIgiwuBvOlnJyUoDE2maHNcVY3yOVY')">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[8px] uppercase tracking-wider font-semibold">Award Winner</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">5.0</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(980)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface leading-snug line-clamp-1">Radiance Cleansing Balm</span>
+<span class="font-body-sm text-[13px] font-semibold text-primary mt-0.5">$52</span>
+</div>
+<p class="font-label-sm text-[10px] text-on-surface-variant line-clamp-1">Blue tansy &amp; cold-pressed rosehip</p>
+</div>
+<button class="w-full mt-3 py-2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shopping_bag</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collection Showcase: 'SUMMER GLOW EDIT' -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="relative w-full rounded-xl overflow-hidden p-space-lg flex flex-col justify-end min-h-[380px] shadow-lg" data-alt="Sun-kissed bronze editorial beauty shot of a model at golden hour with glowing highlighted cheekbones, glass-like dewy skin reflections, warm amber sunshine, and delicate floating 24k gold leaf particles in the air." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNYnQwar3e2xuTWY5YaXIWNmzgKerAP4TAdxby5Z9gku3Woy0xixPTiIsqfiMA1IQb8aj6BB4ww8QzrMl2izVyQ1_WcbcX0xjquMWkACTwmqgJqXE5McHIapxlNRDPpL2WaM7U0TDtMyVqYqnspPhfQBYoHWMPBjv9xt31uEsaz9gyuSZHRR663YyMEc5EKwXcfnUt4xX9hD1_eBSZsOM_srFJmytlgUqO3I7ieHg')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Limited Summer Capsule</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary font-normal leading-tight">
+          Gilded Golden Hour
+        </h2>
+<p class="font-body-sm text-body-sm text-surface-container-low max-w-sm">
+          Illuminating bronzing drops infused with botanical squalane and micronized 24k botanical gold leaf for an everlasting sun-drenched aura.
+        </p>
+<div class="pt-2">
+<button class="px-6 py-3 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase tracking-widest font-semibold flex items-center gap-2 active:scale-95 transition-transform shadow-md">
+<span>Explore The Edit</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Feature: Complexion Precision Shade Matching -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="w-full bg-surface-container-high rounded-xl p-space-lg flex flex-col gap-space-md relative overflow-hidden shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">camera</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Complexion Precision AI</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Find Your Flawless Match</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Calibrated across 42 inclusive skin tones with adaptive chromatic undertone detection.
+        </p>
+</div>
+<!-- Undertone Selector Pills -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Step 1: Select Undertone</span>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 rounded-full bg-surface text-on-surface font-label-sm text-[11px] uppercase tracking-wider shadow-sm flex items-center justify-center font-medium">Cool</button>
+<button class="py-2 rounded-full bg-primary text-on-primary font-label-sm text-[11px] uppercase tracking-wider shadow-sm flex items-center justify-center font-medium">Neutral</button>
+<button class="py-2 rounded-full bg-surface text-on-surface font-label-sm text-[11px] uppercase tracking-wider shadow-sm flex items-center justify-center font-medium">Warm</button>
+<button class="py-2 rounded-full bg-surface text-on-surface font-label-sm text-[11px] uppercase tracking-wider shadow-sm flex items-center justify-center font-medium">Olive</button>
+</div>
+</div>
+<!-- Interactive Gradient Shade Track Preview -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Step 2: Depth Spectrum</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">Rich Tan (Shade 320N)</span>
+</div>
+<div class="relative w-full h-8 rounded-full bg-gradient-to-r from-[#fae7db] via-[#d49971] to-[#3a1b0d] flex items-center px-1 shadow-inner">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer ml-[62%]">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+</div>
+</div>
+</div>
+<!-- Camera Match Button -->
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-md active:scale-95 transition-transform mt-1">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span>Launch AI Camera Shade Matcher</span>
+</button>
+<div class="flex items-center justify-center gap-2 pt-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>Guaranteed 100% Free Exchanges if Shade Differs</span>
+</div>
+</div>
+</section>
+<!-- Shop by Skin Concern -->
+<section class="mt-space-xl flex flex-col gap-space-md px-margin-mobile">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Targeted Efficacy</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Shop By Skin Concern</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Concern 1 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between min-h-[120px] cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface">Dehydration</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Multi Hyaluronic</span>
+</div>
+</div>
+<!-- Concern 2 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between min-h-[120px] cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">flare</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface">Dullness</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Vitamin C Ester</span>
+</div>
+</div>
+<!-- Concern 3 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between min-h-[120px] cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">all_inclusive</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface">Collagen Loss</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Phyto-Bakuchiol</span>
+</div>
+</div>
+<!-- Concern 4 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between min-h-[120px] cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface">Sensitivity</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Centella &amp; Oat</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Clean Beauty Value Guarantee Strip -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">cruelty_free</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">100% Cruelty Free</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Leaping Bunny certified</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychiatry</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">Vegan Botanical</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Zero animal byproducts</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">Paraben Free</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Strict EU standards</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">Derm Tested</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Safe for sensitive skin</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real Glow Before & After Testimonials -->
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Transformative Results</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Radiance Stories</h2>
+</div>
+<div class="bg-surface-container rounded-xl overflow-hidden p-space-md flex flex-col gap-space-md shadow-sm">
+<!-- Split comparison image preview -->
+<div class="grid grid-cols-2 gap-2 h-44 rounded-lg overflow-hidden">
+<div class="relative w-full h-full bg-surface-container-high" data-alt="Macro split face photograph of bare skin before application, showing natural texture and mild uneven redness in clean soft clinical lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGibkhd2nFa6qvL5pwZ73K4SNwQM-n1QP8E6w8w8-_yWxW6pTPuHCr3zNwtQOwP9LoKyw0b6ZCbKx1sFGF9_TlzoBVNyEmszN4wdD8U23UbJ64j43_qcIA9vob41VKvna98flESWqzYAU3mkULR6HAXJQasV0ttTWHG36SX253zv0xhh052obtXxaoABFD0aC0Mjenj9M3NAhYxEGc7KRAXesQvgc3keUys4VpAEM')">
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/70 backdrop-blur-sm text-on-primary font-label-sm text-[9px] uppercase tracking-wider">Before</span>
+</div>
+<div class="relative w-full h-full bg-surface-container-high" data-alt="Macro split face photograph of glowing perfected radiant dewy finish after applying Lumière Silk foundation with light reflections on cheekbone and flawless natural undertone match." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBH5S6pf2gYu0d45XVWTfKBVifSr66TFmsK6pToqzIt0CWpJ1W0Kws_kPn7F--5UDe-IoYL9amMvl3fTlMwx7fvBbu3DAAy4v3HfnrYd8FcMLujWf1xmMrWq5bYQtr-gsST_g0byPm4mXakUXED4Q8H0OnwSBQOXbrmjpK9zRBXwmdWX_SHB1QtgTiOcuMq1Kko1SWcnSErO88eLA0SfSsywkhE7lTepZ6pzZjH2Cc')">
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] uppercase tracking-wider">After 1 Pump</span>
+</div>
+</div>
+<!-- Quote -->
+<div class="flex flex-col gap-2">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+          “Finding my exact olive undertone without oxidation was impossible until Aura Lumière. It melts into the skin like morning dew.”
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">Elena R.</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Verified Collector • Shade 240 Olive</span>
+</div>
+<span class="font-label-sm text-[10px] text-secondary font-semibold uppercase tracking-wider bg-secondary/10 px-2 py-1 rounded-full">Skin Elixir 24H</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 'Glow Guides' Beauty Journal / Editorial Preview -->
+<section class="mt-space-xl flex flex-col gap-space-md">
+<div class="px-margin-mobile flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">The Journal</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Glow Masterclasses</h2>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-0.5" href="#">
+<span>Read All</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<div class="flex gap-space-sm overflow-x-auto px-margin-mobile no-scrollbar pb-1">
+<!-- Article 1 -->
+<div class="flex-shrink-0 w-64 bg-surface-container-lowest rounded-xl p-space-sm flex flex-col gap-2 shadow-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden bg-surface-container" data-alt="Chic Parisienne vanity table with brass mirror, sheer cream blush dabbed on cheek, cup of coffee, and soft natural Parisian morning light streaming in." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDItVgb5cQnukVoMl2wJMOj7nyvmaC7LRiynmMqeSD-4T61K6x49dbTEH3KFLmTfBwKSRUmDOVoN5TG7nL8AXleA6KeCxfMW7fb8FrxoCJSkQed_ujpR3VdDGF4IHSsjLPHcRvU_m5z_OFoJHkP-TNG0u-DNpfkvibFXH7AmVh9jQQwOeyWwjmhXz7E3ZYRORzTnUQwqojHdCtvyhvV0ZAekrKvVR5uRbU-hzUnoYk')"></div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-semibold">5-Min Ritual</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface leading-tight mt-0.5">The French Girl Minimalist Glow Routine</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-1">3 min read • By Chloé Laurent</span>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="flex-shrink-0 w-64 bg-surface-container-lowest rounded-xl p-space-sm flex flex-col gap-2 shadow-sm">
+<div class="w-full h-36 rounded-lg overflow-hidden bg-surface-container" data-alt="Close up swatches of liquid foundations with diverse undertones ranging from cool peach to deep espresso against neutral architectural stone backdrop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgPW-l4xpjAPtDnIBe5mNUwtHsm0PDYnbmz0FV8dQAPYe5oRoYXL5fv_a3q33KTUlCNGBWD-xDPOWPeWvXK0zljd45xsOYZPrV4vTZZlP6eqRQ9Ezdejtgop2HXz3QUXfh-E40jFHAU57MfBEDpBLcjkhKMyU_dshbj3a9P1ci3HfiLHjOpWxqGwqtihDgm5uY-Zv05Ev5OuEPXldE65OeZVws3BvMrG6ddU0y7lk')"></div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-semibold">Skin Science</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface leading-tight mt-0.5">Deciphering Your True Chromatic Undertone</h4>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-1">6 min read • Master Class</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Grid #GlowWithUs -->
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">In Real Life</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">#GlowWithUs</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tag @AuraLumiere</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="relative h-44 rounded-xl overflow-hidden bg-surface-container" data-alt="Portrait of a young woman with radiant natural glowing skin, gold hoop earrings and subtle gloss lips smiling in sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO3vAGcb630OjQ8qvtyJjBrAMZF8yLYEx7URPUhulhLsO0SXBGNZxDuXVtDuxMVR2MWy-OeRHnkKOyktmvXGUbUkxejIAMRsXnUwP7Z9-SF4lHQk-YYyRJRsQWcbYkQo95adFn5ouGRzTWnMU_jkHO8WAh2AloVuoqxaqWAOgKy5l2UTnF2dnPH0_vo66BozTVm2I9FB4J1j7IIvq2iL2VUq8oOaVvzbyfSIWewLU')">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/60 backdrop-blur-sm text-on-primary font-label-sm text-[10px]">@maya.dew</div>
+</div>
+<div class="relative h-44 rounded-xl overflow-hidden bg-surface-container" data-alt="Editorial portrait of a woman with rich deep melanin-rich skin glowing with golden highlighters and dewy cheek reflection in warm studio light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNrj5zeqz6DX1sRblVxC63rpIxzhNrjS9DdGK5TT654bxqjazujsFL5jtk_yVZL6WSFVra0vAflL7znkx6O9t1xttWRAJKGQNboefQ2234eYE6N0_pwFSEPE0GfoxyTagTCSiS9FfjJxeIbGRM9ppCXUbIR2ErxgKlSdebm8ECOPvwYC7ZRat3-vBX_x574lDSkgxbq2LpEheeBogGfhLTPRlpB041haWMzKI-ldo')">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/60 backdrop-blur-sm text-on-primary font-label-sm text-[10px]">@amara_glow</div>
+</div>
+<div class="relative h-44 rounded-xl overflow-hidden bg-surface-container" data-alt="Side profile beauty shot of an Asian model with glassy mirror-like dewy skin texture and peach blush highlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiBHDFvAC5K-7LhVIUNemIb0tG2zjjts30w4C2XKBSu2M_v3tHj-3tcMBljO8m7yviqLuaFuqrknFpOuI0bGP8LTjM_nfKfjHrt62qJWYltuVeuuZudUPgryK71-I8MoDEEc2rsS2T6BAK6u9sFZGBGFN-lYn9Qxsiv0-8mWnHnCIU3M1Rf1hZbNGan_KzMgp5u6wWvv4oHBm33APfgpOTsH9rCecwJmzF5Bj3y4E')">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/60 backdrop-blur-sm text-on-primary font-label-sm text-[10px]">@lin.lumiere</div>
+</div>
+<div class="relative h-44 rounded-xl overflow-hidden bg-surface-container" data-alt="Close up of a woman with freckles and glossy hydrating lip oil softly smiling outdoors in afternoon warm breeze." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-OloCpToli1HviCqP6TlbxjqMtDi2sqPNyoROn1YQAmYy0BIyuXFgHGlX1tSk0jISTsETTTzUf31A85G_SE8jr8vp3iQwr58tJhjkwQyLpmhJIpDv8ZJfm-gD_5KjewDiiQWNgZzV7UUQy5HVT-z0X2IZ2-wMJhDq8tX4h-Xdp_opw2G2HI4S2IXWUL-XRyILD9fLkQzlTzv3TVRZ_mbfzIOQ9ERmm80ErYUNAnM')">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/60 backdrop-blur-sm text-on-primary font-label-sm text-[10px]">@claire_flora</div>
+</div>
+</div>
+</section>
+<!-- VIP Society Newsletter Card -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="bg-primary text-on-primary rounded-xl p-space-lg flex flex-col gap-space-sm shadow-xl relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-secondary/20 blur-2xl"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Private Salon Access</span>
+<h3 class="font-headline-sm text-headline-sm font-normal text-on-primary">Join The Lumière Society</h3>
+<p class="font-body-sm text-body-sm text-surface-container-low max-w-xs">
+        Receive 15% off your inaugural ritual, seasonal bespoke gifts, and priority invites to limited harvest vault drops.
+      </p>
+<form class="flex flex-col gap-2 pt-2" onsubmit="event.preventDefault(); this.querySelector('button span').textContent='Welcome to Society';">
+<div class="relative w-full">
+<input class="w-full h-12 px-4 rounded-full bg-surface-container-lowest/10 text-on-primary placeholder:text-surface-container-high/60 font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest/20 transition-all" placeholder="Enter your preferred email" required="" type="email"/>
+</div>
+<button class="w-full h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase tracking-widest font-semibold flex items-center justify-center shadow-md active:scale-95 transition-transform" type="submit">
+<span>Claim 15% Off</span>
+</button>
+</form>
+</div>
+</section>
+<!-- Editorial Brand Footer Navigation -->
+<footer class="mt-space-xl px-margin-mobile flex flex-col gap-space-md border-t-0 pt-space-md pb-6 text-on-surface-variant">
+<div class="flex flex-col items-center text-center gap-1">
+<span class="font-headline-sm text-[20px] text-primary font-normal tracking-wide">AURA LUMIÈRE</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest text-secondary">Paris • Kyoto • New York</span>
+</div>
+<div class="grid grid-cols-2 gap-y-3 gap-x-6 text-left font-label-sm text-[11px] uppercase tracking-wider pt-2">
+<a class="hover:text-primary transition-colors" href="#">Customer Concierge</a>
+<a class="hover:text-primary transition-colors" href="#">Shade Consultation</a>
+<a class="hover:text-primary transition-colors" href="#">Ingredient Glossary</a>
+<a class="hover:text-primary transition-colors" href="#">Sustainability Charter</a>
+<a class="hover:text-primary transition-colors" href="#">Track Your Order</a>
+<a class="hover:text-primary transition-colors" href="#">Boutique Locations</a>
+</div>
+<div class="flex items-center justify-between pt-4 border-t-0 text-[10px] text-on-surface-variant">
+<span>© 2025 Aura Lumière Labs Inc.</span>
+<div class="flex gap-3">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
+  // Simple micro-interaction for shade swatch selection
+  document.querySelectorAll('button[title]').forEach(button => {
+    button.addEventListener('click', function() {
+      const parent = this.parentElement;
+      parent.querySelectorAll('button').forEach(btn => {
+        btn.classList.remove('scale-110');
+      });
+      this.classList.add('scale-110');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-8px_24px_rgba(201,147,123,0.08)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-sm max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 transition-colors text-secondary" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[9px]">Discover</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="shop" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[9px]">Shop</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="shade-match" href="#"><span class="material-symbols-outlined text-[22px]">filter_vintage</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[9px]">Shade Match</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="wishlist" href="#"><div class="relative"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute -top-1 -right-2 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[8px] flex items-center justify-center leading-none">3</span></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-[9px]">Wishlist</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="bag" href="#"><div class="relative"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-2 w-3.5 h-3.5 rounded-full bg-primary text-on-primary font-label-sm text-[8px] flex items-center justify-center leading-none">2</span></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-[9px]">Bag</span></a></div></nav></body></html>
